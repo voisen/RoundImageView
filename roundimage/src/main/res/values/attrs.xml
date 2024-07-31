@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RoundImageView">
+        <attr name="android:src" format="reference"/>
+        <attr name="android:radius" format="dimension"/>
+        <attr name="border_width" format="dimension"/>
+        <attr name="border_color" format="color"/>
+        <attr name="android:bottomLeftRadius" format="dimension"/>
+        <attr name="android:bottomRightRadius" format="dimension"/>
+        <attr name="android:topLeftRadius" format="dimension"/>
+        <attr name="android:topRightRadius" format="dimension"/>
+        <attr name="scaleMode" format="enum">
+            <enum name="centerCrop" value="0"/>
+            <enum name="fitXY" value="1"/>
+        </attr>
+    </declare-styleable>
+</resources>

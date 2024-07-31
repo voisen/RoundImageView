@@ -2,9 +2,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'maven-publish'
 
 android {
-    namespace 'com.github.voisen'
     compileSdkVersion 29
-
     defaultConfig {
         minSdkVersion 19
         targetSdkVersion 29
@@ -24,18 +22,11 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-
-    publishing {
-        singleVariant('release') {
-            withSourcesJar()
-        }
-    }
 }
 
 dependencies {
     compileOnly "androidx.appcompat:appcompat:1.2.0"
 }
-
 
 publishing {
     publications {

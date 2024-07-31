@@ -33,7 +33,7 @@ publishing {
         library(MavenPublication) {
             setGroupId('com.github.voisen')
             setArtifactId('RoundImageView')
-            version '1.0.1'
+            version '1.0.2'
 //            from components.java
             println "publishing: " + groupId
             println "publishing: " + artifactId

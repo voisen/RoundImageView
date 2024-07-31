@@ -36,7 +36,6 @@ dependencies {
     compileOnly "androidx.appcompat:appcompat:1.2.0"
 }
 
-
 publishing {
     publications {
         library(MavenPublication) {

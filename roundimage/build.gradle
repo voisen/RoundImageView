@@ -33,7 +33,7 @@ publishing {
         library(MavenPublication) {
             groupId = 'com.github.voisen'
             artifactId = 'RoundImageView'
-            version '1.0.3'
+            version '1.0.4'
             afterEvaluate { artifact(tasks.getByName("bundleReleaseAar")) }
 //            from components.java
             println "publishing: " + groupId

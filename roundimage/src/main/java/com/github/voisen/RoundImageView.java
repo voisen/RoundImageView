@@ -29,7 +29,6 @@ public class RoundImageView extends View {
     private final String TAG = "RoundImageView";
     private static final int COLOR_DRAWABLE_DIMENSION = 2;
     private static final Bitmap.Config BITMAP_CONFIG = Bitmap.Config.ARGB_8888;
-    private PorterDuffXfermode mMode = new PorterDuffXfermode(PorterDuff.Mode.SRC_IN);
     private Bitmap mBitmap;
     private final Paint mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
     private final Matrix mShaderMatrix = new Matrix();
@@ -47,7 +46,6 @@ public class RoundImageView extends View {
 
     public static final int SCALE_TYPE_CENTER_CROP = 0;
     public static final int SCALE_TYPE_FIT_XY = 1;
-
 
     public RoundImageView(Context context) {
         this(context, null);

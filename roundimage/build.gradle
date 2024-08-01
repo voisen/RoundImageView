@@ -31,9 +31,10 @@ dependencies {
 publishing {
     publications {
         library(MavenPublication) {
-            setGroupId('com.github.voisen')
-            setArtifactId('RoundImageView')
-            version '1.0.2'
+            groupId = 'com.github.voisen'
+            artifactId = 'RoundImageView'
+            version '1.0.3'
+            afterEvaluate { artifact(tasks.getByName("bundleReleaseAar")) }
 //            from components.java
             println "publishing: " + groupId
             println "publishing: " + artifactId

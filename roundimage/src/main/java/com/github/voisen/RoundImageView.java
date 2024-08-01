@@ -249,6 +249,7 @@ public class RoundImageView extends View {
             }else{
                 widthSize = 45;
             }
+            widthSize = Math.max(widthSize, getMinimumWidth());
         }
         if (heightMode != MeasureSpec.EXACTLY){
             if (mBitmap != null){
@@ -256,6 +257,7 @@ public class RoundImageView extends View {
             }else{
                 heightSize = 45;
             }
+            heightSize = Math.max(heightSize, getMinimumHeight());
         }
         setMeasuredDimension(widthSize, heightSize);
     }
